@@ -1,1 +1,16 @@
-nn
+num1 = float(input("ادخل الرقم الأول: "))
+op = input("ادخل العملية : ")
+num2 = float(input("ادخل الرقم الثاني: "))
+if op == "+":
+    print("النتيجة:", num1 + num2)
+elif op == "-":
+    print("النتيجة:", num1 - num2)
+elif op == "*":
+    print("النتيجة:", num1 * num2)
+elif op == "/":
+    if num2 != 0:
+        print("النتيجة:", num1 / num2)
+    else:
+        print("لا يمكن القسمة على صفر")
+else:
+    print("عملية غير صحيحة")
